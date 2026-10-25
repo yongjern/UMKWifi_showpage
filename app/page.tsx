@@ -68,6 +68,14 @@ export default function Home() {
       <footer className="site-footer waiting-footer">
         <span>UMK WIFI / CAMPUS NETWORK</span>
         <strong>COMING SOON</strong>
+        <div className="project-disclaimer">
+          <strong>PROJECT DISCLAIMER</strong>
+          <p>
+            UMKWiFi is an independent student-made project, not an official UMK project
+            or service. The name is used because this project connects to UMK’s Wi-Fi
+            network.
+          </p>
+        </div>
       </footer>
     </main>
   );
