@@ -38,8 +38,12 @@ export default function Home() {
           <p className="eyebrow"><span>ONE CAMPUS, ONE CONNECTION.</span></p>
           <h1 id="hero-title">UMKWiFi<br /><em>Coming Soon.</em></h1>
           <p className="hero-lede">
-            A simpler campus connection is on the way.<br></br> We’re getting everything ready
-            for you to connect.<br><br></br></br>Tested Area : Campus Kota & Kemumin.
+            A simpler campus connection is on the way.
+            <br />
+            We’re getting everything ready for you to connect.
+            <br />
+            <br />
+            Tested Area: Campus Kota &amp; Kemumin.
           </p>
           <div className="hero-actions">
             <a
