@@ -35,11 +35,11 @@ export default function Home() {
       <div className="signal-divider" aria-hidden="true" />
       <section className="hero waiting-hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow"><span>CAMPUS NETWORK / 01</span></p>
+          <p className="eyebrow"><span>ONE CAMPUS, ONE CONNECTION.</span></p>
           <h1 id="hero-title">UMKWiFi<br /><em>Coming Soon.</em></h1>
           <p className="hero-lede">
-            A simpler campus connection is on the way. We’re getting everything ready
-            for you to connect.
+            A simpler campus connection is on the way.<br></br> We’re getting everything ready
+            for you to connect.<br><br></br></br>Tested Area : Campus Kota & Kemumin.
           </p>
           <div className="hero-actions">
             <a
@@ -48,7 +48,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              VISIT UMK WEBSITE <ArrowIcon />
+              WE STILL PREPARING, CHECK UMK WEBSITE FIRST! <ArrowIcon />
             </a>
           </div>
           <p className="waiting-status"><i aria-hidden="true" /> NETWORK PORTAL IN PREPARATION</p>
