@@ -1,15 +1,5 @@
+import Image from "next/image";
 import { LiveClock } from "@/components/live-clock";
-
-function WifiMark() {
-  return (
-    <svg viewBox="0 0 52 52" role="img" aria-label="UMK WiFi signal mark">
-      <path d="M8 18.5c10-8.2 26-8.2 36 0" />
-      <path d="M14.5 27c6.5-5.5 16.5-5.5 23 0" />
-      <path d="M21 35c2.8-2.2 7.2-2.2 10 0" />
-      <circle cx="26" cy="42" r="2.5" />
-    </svg>
-  );
-}
 
 function ArrowIcon() {
   return (
@@ -24,7 +14,9 @@ export default function Home() {
     <main className="site-shell waiting-shell">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="UMK WiFi home">
-          <span className="brand-mark"><WifiMark /></span>
+          <span className="brand-mark">
+            <Image src="/logo.png" alt="" width={68} height={68} priority />
+          </span>
           <span className="brand-copy">
             <small>ONE CAMPUS, ONE CONNECTION.</small>
             <strong>UMKWiFi</strong>

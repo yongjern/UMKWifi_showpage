@@ -75,8 +75,7 @@ svg { display: block; }
   border-bottom: 2px solid var(--deep-orange);
 }
 
-.brand-mark svg { width: 48px; fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: square; }
-.brand-mark circle { fill: var(--orange); stroke: none; }
+.brand-mark img { width: 68px; height: 68px; object-fit: contain; }
 
 .brand-copy { display: flex; flex-direction: column; padding-left: 24px; border-left: 1px solid #3d3749; }
 .brand-copy small, .eyebrow { color: var(--orange); font: 600 11px/1 var(--font-mono), monospace; }
@@ -505,7 +504,7 @@ svg { display: block; }
   .site-header { min-height: 102px; }
   .brand { gap: 10px; }
   .brand-mark { width: 48px; height: 66px; }
-  .brand-mark svg { width: 38px; }
+  .brand-mark img { width: 44px; height: 44px; }
   .brand-copy { padding-left: 10px; }
   .brand-copy small { display: none; }
   .brand-copy strong { margin: 0; font-size: 22px; }
