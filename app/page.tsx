@@ -9,6 +9,13 @@ function ArrowIcon() {
   );
 }
 
+const campusTests = [
+  { name: "UMK Kampus Kota", status: "TESTED & PASSED", version: "VER 1.0.2" },
+  { name: "UMK Kolej Kediaman Sri Kemumin", status: "TESTED & PASSED", version: "VER 1.0.3" },
+  { name: "UMK Kolej Kediaman Taman Bendahara", status: "NEED TESTER" },
+  { name: "UMK Kampus Bachok", status: "NEED TESTER" },
+];
+
 export default function Home() {
   return (
     <main className="site-shell waiting-shell">
@@ -35,7 +42,7 @@ export default function Home() {
             We’re getting everything ready for you to connect.
             <br />
             <br />
-            Tested Area: Campus Kota &amp; Kemumin.
+            UMKWiFi Extension testing is underway at four campus locations.
           </p>
           <div className="hero-actions">
             <a
@@ -49,16 +56,37 @@ export default function Home() {
           </div>
           <p className="waiting-status"><i aria-hidden="true" /> NETWORK PORTAL IN PREPARATION</p>
         </div>
-        <div className="signal-core" aria-hidden="true">
-          <span className="core-label">SCANNING / CAMPUS NETWORK</span>
-          <div className="radar-display">
-            <span className="radar-ring radar-ring-outer" />
-            <span className="radar-ring radar-ring-middle" />
-            <span className="radar-ring radar-ring-inner" />
-            <span className="radar-sweep" />
-            <span className="radar-blip" />
+        <div className="signal-core">
+          <span className="core-label">UMKWIFI EXTENSION / TEST STATUS</span>
+          <div className="campus-overview">
+            <div className="radar-display" role="img" aria-label="Four UMK campus testing locations">
+              <span className="radar-ring radar-ring-outer" />
+              <span className="radar-ring radar-ring-middle" />
+              <span className="radar-ring radar-ring-inner" />
+              <span className="radar-sweep" />
+              {campusTests.map((campus, index) => (
+                <span
+                  className={`radar-marker radar-marker-${index + 1}`}
+                  key={campus.name}
+                  aria-hidden="true"
+                >
+                  {index + 1}
+                </span>
+              ))}
+            </div>
+            <ol className="campus-list" aria-label="UMKWiFi Extension campus test results">
+              {campusTests.map((campus, index) => (
+                <li className={campus.version ? "campus-tested" : "campus-pending"} key={campus.name}>
+                  <span className="campus-index">{String(index + 1).padStart(2, "0")}</span>
+                  <div className="campus-details">
+                    <strong>{campus.name}</strong>
+                    <span className="campus-status">{campus.status}</span>
+                    {campus.version && <span className="campus-version">{campus.version}</span>}
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
-          <span className="coordinate">KOTA BHARU / MALAYSIA</span>
         </div>
       </section>
       <footer className="site-footer waiting-footer">
