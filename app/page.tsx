@@ -59,33 +59,27 @@ export default function Home() {
         <div className="signal-core">
           <span className="core-label">UMKWIFI EXTENSION / TEST STATUS</span>
           <div className="campus-overview">
-            <div className="radar-display" role="img" aria-label="Four UMK campus testing locations">
+            <div className="radar-display" aria-label="UMKWiFi Extension campus testing locations">
               <span className="radar-ring radar-ring-outer" />
               <span className="radar-ring radar-ring-middle" />
               <span className="radar-ring radar-ring-inner" />
               <span className="radar-sweep" />
               {campusTests.map((campus, index) => (
-                <span
-                  className={`radar-marker radar-marker-${index + 1}`}
+                <button
+                  type="button"
+                  className={`radar-marker radar-marker-${index + 1}${campus.version ? " campus-tested" : ""}`}
                   key={campus.name}
-                  aria-hidden="true"
+                  aria-label={`Campus ${index + 1}: ${campus.name}. ${campus.status}${campus.version ? `, ${campus.version}` : ""}. Hover or focus to view details.`}
+                  aria-describedby={`campus-tooltip-${index + 1}`}
                 >
-                  {index + 1}
-                </span>
-              ))}
-            </div>
-            <ol className="campus-list" aria-label="UMKWiFi Extension campus test results">
-              {campusTests.map((campus, index) => (
-                <li className={campus.version ? "campus-tested" : "campus-pending"} key={campus.name}>
-                  <span className="campus-index">{String(index + 1).padStart(2, "0")}</span>
-                  <div className="campus-details">
+                  <span className="campus-tooltip" role="tooltip" id={`campus-tooltip-${index + 1}`}>
                     <strong>{campus.name}</strong>
                     <span className="campus-status">{campus.status}</span>
                     {campus.version && <span className="campus-version">{campus.version}</span>}
-                  </div>
-                </li>
+                  </span>
+                </button>
               ))}
-            </ol>
+            </div>
           </div>
         </div>
       </section>
