@@ -12,7 +12,7 @@ function ArrowIcon() {
 const campusTests = [
   { name: "UMK Kampus Kota", status: "TESTED & PASSED", version: "VER 1.0.2" },
   { name: "UMK Kolej Kediaman Sri Kemumin", status: "TESTED & PASSED", version: "VER 1.0.3" },
-  { name: "UMK Kolej Kediaman Taman Bendahara", status: "NEED TESTER" },
+  { name: "UMK Kolej Kediaman Taman Bendahara", status: "TESTED & PASSED", version: "VER 1.0.5.1" },
   { name: "UMK Kampus Bachok", status: "NEED TESTER" },
 ];
 
