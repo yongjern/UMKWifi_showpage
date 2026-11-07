@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { LiveClock } from "@/components/live-clock";
 
 function ArrowIcon() {
@@ -85,7 +86,10 @@ export default function Home() {
       </section>
       <footer className="site-footer waiting-footer">
         <span>UMK WIFI / CAMPUS NETWORK</span>
-        <strong>COMING SOON</strong>
+        <div className="footer-links">
+          <Link href="/privacy">PRIVACY POLICY</Link>
+          <strong>COMING SOON</strong>
+        </div>
         <div className="project-disclaimer">
           <strong>PROJECT DISCLAIMER</strong>
           <p>
