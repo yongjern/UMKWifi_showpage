@@ -7,60 +7,6 @@ export const metadata: Metadata = {
   description: "Privacy policy for the UMKWiFi website and browser extension.",
 };
 
-const policySections = [
-  {
-    number: "01",
-    title: "Information we collect",
-    content: (
-      <p>
-        UMKWiFi does not collect, store, or share personal data through this website or
-        the UMKWiFi Extension.
-      </p>
-    ),
-  },
-  {
-    number: "02",
-    title: "Cookies and analytics",
-    content: (
-      <p>
-        This website does not use analytics services or cookies. It does not track your
-        activity across this or other websites.
-      </p>
-    ),
-  },
-  {
-    number: "03",
-    title: "Data sharing and retention",
-    content: (
-      <p>
-        Because UMKWiFi does not collect personal data, there is no personal data to
-        retain, sell, rent, or disclose to third parties.
-      </p>
-    ),
-  },
-  {
-    number: "04",
-    title: "Third-party services",
-    content: (
-      <p>
-        The website may link to external websites, including the official Universiti
-        Malaysia Kelantan website. Their privacy practices are governed by their own
-        policies, and UMKWiFi is not responsible for their content or practices.
-      </p>
-    ),
-  },
-  {
-    number: "05",
-    title: "Changes to this policy",
-    content: (
-      <p>
-        This policy may be updated if the website or extension changes. Any revision
-        will be published here with an updated effective date.
-      </p>
-    ),
-  },
-];
-
 export default function PrivacyPolicy() {
   return (
     <main className="site-shell policy-shell">
@@ -81,57 +27,78 @@ export default function PrivacyPolicy() {
 
       <div className="signal-divider" aria-hidden="true" />
 
-      <section className="policy-hero" aria-labelledby="policy-title">
-        <div>
+      <article className="policy-document" aria-labelledby="policy-title">
+        <header>
           <p className="eyebrow">LEGAL / PRIVACY</p>
-          <h1 id="policy-title">Privacy<br /><em>Policy.</em></h1>
-        </div>
-        <div className="policy-summary">
-          <span>POLICY STATUS</span>
-          <strong>NO PERSONAL DATA COLLECTED</strong>
-          <dl>
-            <div>
-              <dt>Effective</dt>
-              <dd>8 November 2026</dd>
-            </div>
-            <div>
-              <dt>Applies to</dt>
-              <dd>Website &amp; Extension</dd>
-            </div>
-            <div>
-              <dt>Jurisdiction</dt>
-              <dd>Malaysia</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
+          <h1 id="policy-title">Privacy Policy</h1>
+          <p className="policy-lede">
+            This privacy policy explains how the independent, student-made UMKWiFi
+            project handles information when you use its website or browser extension.
+          </p>
+          <ul className="policy-meta">
+            <li><strong>Effective date:</strong> 8 November 2026</li>
+            <li><strong>Applies to:</strong> UMKWiFi website and extension</li>
+            <li><strong>Jurisdiction:</strong> Malaysia</li>
+          </ul>
+        </header>
 
-      <div className="policy-intro">
-        <p>
-          This privacy policy explains how the independent, student-made UMKWiFi project
-          handles information when you use its website or browser extension.
-        </p>
-      </div>
+        <hr />
 
-      <section className="policy-sections" aria-label="Privacy policy details">
-        {policySections.map((section) => (
-          <article className="policy-section" key={section.number}>
-            <span>{section.number}</span>
-            <div>
-              <h2>{section.title}</h2>
-              {section.content}
-            </div>
-          </article>
-        ))}
-      </section>
+        <section>
+          <h2>1. Information we collect</h2>
+          <p>
+            UMKWiFi does not collect, store, or share personal data through this website
+            or the UMKWiFi Extension.
+          </p>
+        </section>
 
-      <section className="policy-contact" aria-labelledby="contact-title">
-        <div>
-          <p className="eyebrow">CONTACT / PRIVACY QUESTIONS</p>
-          <h2 id="contact-title">Need clarification?</h2>
-        </div>
-        <a href="mailto:jieernyong1207@gmail.com">jieernyong1207@gmail.com</a>
-      </section>
+        <section>
+          <h2>2. Cookies and analytics</h2>
+          <p>
+            This website does not use analytics services or cookies. It does not track
+            your activity across this or other websites.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Data sharing and retention</h2>
+          <p>
+            Because UMKWiFi does not collect personal data, there is no personal data to
+            retain, sell, rent, or disclose to third parties.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Third-party services</h2>
+          <p>
+            The website may link to external websites, including the official Universiti
+            Malaysia Kelantan website. Their privacy practices are governed by their own
+            policies, and UMKWiFi is not responsible for their content or practices.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Changes to this policy</h2>
+          <p>
+            This policy may be updated if the website or extension changes. Any revision
+            will be published here with an updated effective date.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Contact</h2>
+          <p>
+            For privacy questions or clarification, email{" "}
+            <a href="mailto:jieernyong1207@gmail.com">jieernyong1207@gmail.com</a>.
+          </p>
+        </section>
+
+        <blockquote>
+          <strong>Project disclaimer:</strong> UMKWiFi is an independent student-made
+          project, not an official UMK project or service. The name is used because this
+          project connects to UMK’s Wi-Fi network.
+        </blockquote>
+      </article>
 
       <footer className="site-footer policy-footer">
         <span>UMK WIFI / CAMPUS NETWORK</span>
