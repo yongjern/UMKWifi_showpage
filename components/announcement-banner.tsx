@@ -14,9 +14,15 @@ export function AnnouncementBanner() {
     <aside className="announcement-banner" aria-label="Important announcement">
       <div className="announcement-banner-copy">
         <span>IMPORTANT UPDATE</span>
-        <strong>UMKWiFi v1.0.6 Microsoft Edge Add-ons release delayed</strong>
+        <strong>UMKWiFi v1.0.6 is now available on Microsoft Edge Add-ons!</strong>
       </div>
-      <Link href="/announcements/v1-0-6-delay">READ ANNOUNCEMENT</Link>
+      <Link
+        href="https://microsoftedge.microsoft.com/addons/detail/lkjcepgdfpepncnfogkelnmmhefnmnjc"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GET IT ON MICROSOFT EDGE
+      </Link>
       <button
         type="button"
         onClick={() => setIsVisible(false)}

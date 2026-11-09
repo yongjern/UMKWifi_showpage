@@ -36,26 +36,25 @@ export default function Home() {
       <section className="hero waiting-hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow"><span>ONE CAMPUS, ONE CONNECTION.</span></p>
-          <h1 id="hero-title">UMKWiFi<br /><em>Coming Soon.</em></h1>
+          <h1 id="hero-title">UMKWiFi<br /><em>Now Available.</em></h1>
           <p className="hero-lede">
-            A simpler campus connection is on the way.
+            The official UMKWiFi extension is now available on Microsoft Edge Add-ons.
+            Install it today for a simpler way to connect to UMK Wi-Fi.
             <br />
-            We’re getting everything ready for you to connect.
             <br />
-            <br />
-            UMKWiFi Extension testing is underway at four campus locations.
+            Tested across supported UMK campus locations.
           </p>
           <div className="hero-actions">
             <a
               className="primary-action"
-              href="https://www.umk.edu.my/"
+              href="https://microsoftedge.microsoft.com/addons/detail/lkjcepgdfpepncnfogkelnmmhefnmnjc"
               target="_blank"
               rel="noreferrer"
             >
-              WE STILL PREPARING, CHECK UMK WEBSITE FIRST! <ArrowIcon />
+              GET IT ON MICROSOFT EDGE <ArrowIcon />
             </a>
           </div>
-          <p className="waiting-status"><i aria-hidden="true" /> NETWORK PORTAL IN PREPARATION</p>
+          <p className="waiting-status"><i aria-hidden="true" /> OFFICIAL EDGE ADD-ON RELEASED</p>
         </div>
         <div className="signal-core">
           <span className="core-label">UMKWIFI EXTENSION / TEST STATUS</span>
@@ -88,7 +87,7 @@ export default function Home() {
         <span>UMK WIFI / CAMPUS NETWORK</span>
         <div className="footer-links">
           <Link href="/privacy">PRIVACY POLICY</Link>
-          <strong>COMING SOON</strong>
+          <strong>AVAILABLE NOW</strong>
         </div>
         <div className="project-disclaimer">
           <strong>PROJECT DISCLAIMER</strong>

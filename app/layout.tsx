@@ -16,16 +16,16 @@ export const metadata: Metadata = {
   metadataBase: process.env.VERCEL_URL
     ? new URL(`https://${process.env.VERCEL_URL}`)
     : new URL("http://localhost:3000"),
-  title: "UMK WiFi — Launching Soon",
-  description: "A faster, clearer way to get connected across UMK is on the way.",
+  title: "UMKWiFi — Available on Microsoft Edge",
+  description: "The official UMKWiFi extension is now available on Microsoft Edge Add-ons.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "UMK WiFi — Launching Soon",
-    description: "A faster, clearer way to get connected across UMK is on the way.",
+    title: "UMKWiFi — Available on Microsoft Edge",
+    description: "The official UMKWiFi extension is now available on Microsoft Edge Add-ons.",
     siteName: "UMKWiFi",
     images: [
       {
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "UMK WiFi — Launching Soon",
-    description: "A faster, clearer way to get connected across UMK is on the way.",
+    title: "UMKWiFi — Available on Microsoft Edge",
+    description: "The official UMKWiFi extension is now available on Microsoft Edge Add-ons.",
     images: ["/logo.png"],
   },
 };
