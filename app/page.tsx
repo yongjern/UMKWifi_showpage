@@ -10,6 +10,8 @@ function ArrowIcon() {
   );
 }
 
+const edgeAddonsUrl = "https://microsoftedge.microsoft.com/addons/detail/lkjcepgdfpepncnfogkelnmmhefnmnjc";
+
 const campusTests = [
   { name: "UMK Kampus Kota", status: "TESTED & PASSED", version: "VER 1.0.2" },
   { name: "UMK Kolej Kediaman Sri Kemumin", status: "TESTED & PASSED", version: "VER 1.0.3" },
@@ -31,6 +33,9 @@ export default function Home() {
           </span>
         </a>
         <LiveClock />
+        <nav className="utility-nav home-nav" aria-label="Support">
+          <a href="https://forms.gle/CyLdGdAy2PzAqxx8A">Bug Tracker Forms <ArrowIcon /></a>
+        </nav>
       </header>
       <div className="signal-divider" aria-hidden="true" />
       <section className="hero waiting-hero" id="top" aria-labelledby="hero-title">
@@ -47,7 +52,7 @@ export default function Home() {
           <div className="hero-actions">
             <a
               className="primary-action"
-              href="https://microsoftedge.microsoft.com/addons/detail/lkjcepgdfpepncnfogkelnmmhefnmnjc"
+              href={edgeAddonsUrl}
               target="_blank"
               rel="noreferrer"
             >
@@ -82,6 +87,17 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="access-section setup-guide" aria-labelledby="setup-title">
+        <div className="access-intro">
+          <p className="eyebrow">QUICK START / MICROSOFT EDGE</p>
+          <h2 id="setup-title">How to use UMKWiFi</h2>
+        </div>
+        <ol className="setup-steps">
+          <li>Open <a href={edgeAddonsUrl}>UMKWiFi on Microsoft Edge Add-ons</a> in Edge, select <strong>Get</strong>, then confirm with <strong>Add extension</strong>.</li>
+          <li>Connect your device to UMK Wi-Fi.</li>
+          <li>In Edge, open the <strong>Extensions</strong> menu, select <strong>UMKWiFi</strong>, and follow the prompts.</li>
+        </ol>
       </section>
       <footer className="site-footer waiting-footer">
         <span>UMK WIFI / CAMPUS NETWORK</span>
